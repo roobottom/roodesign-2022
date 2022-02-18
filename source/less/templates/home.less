@@ -1,0 +1,30 @@
+.template-home {
+  background-color: var(--c-purple);
+  //background: linear-gradient(-120deg,var(--c-pink),var(--c-purple));
+  overflow-x: hidden;
+  
+
+  &, a {
+    color: white;
+  }
+
+  .footer {
+    --badge-bg: var(--c-purple);
+  }
+
+  &-background {
+    position: fixed;
+    top: -20vw;
+    right: -25vw;
+    z-index: -1;
+    transform: rotate(45deg);
+    width: 75vw;
+    height: 75vw;
+
+    rect {
+      fill: var(--c-pink);
+    }
+
+  }
+
+}

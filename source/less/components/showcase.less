@@ -1,0 +1,37 @@
+.showcase {
+  &-image {
+    float: right;
+    display: block;
+    max-width: 120px;
+    margin-top: var(--space-s);
+    margin-right: var(--space-s);
+  }
+}
+
+@media only screen and (min-width: 609px) {
+  .showcase {
+
+    display: grid;
+    grid-template-columns: auto minmax(180px, 420px);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "title image"
+      "content image";
+
+    &-title {
+      grid-area: title;
+      align-self: end;
+    }
+
+    &-image {
+      float: none;
+      max-width: 100%;
+      grid-area: image;
+    }
+
+    &-content {
+      grid-area: content;
+    }
+
+  }
+}
