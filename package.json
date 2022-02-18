@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
-    "watch:less": "npx less-watch-compiler ./source/less ./_site/css roodesign.less",
+    "watch:less": "npx less-watch-compiler ./source/assets/less ./_site/css roodesign.less",
     "start": "npm run watch:eleventy & npm run watch:less"
   },
   "author": "Jon Roobottom",
