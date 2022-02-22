@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
   //shortcodes (AKA components)
   eleventyConfig.addShortcode("gallery", require('./lib/shortcodes/gallery.js'))
   eleventyConfig.addShortcode("outcomes", require('./lib/shortcodes/outcomes.js'))
+  eleventyConfig.addShortcode("card", require('./lib/shortcodes/card.js'))
 
   return {
     markdownTemplateEngine: "njk",
