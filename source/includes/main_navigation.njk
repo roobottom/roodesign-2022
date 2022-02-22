@@ -1,0 +1,13 @@
+<nav class="navigation{% if template == "home" or template == 'services' %} navigation--reverse{% endif %}" aria-label="Main">
+  <a href="/" class="navigation__logo" aria-labelledby="sitename">
+      <svg xmlns="http://www.w3.org/2000/svg" width="29" height="36" id="sitelogo" class="navigation__logo-image">
+        <path fill="currentcolor" fill-rule="nonzero" d="M2.1 7.6L15 20.3l5.6-5.6-4.3-4.3.7-.7 4.3 4.3 6.4-6.4-5.7-5.7-11.3 11.3-.7-.7 4.2-4.2-6.3-6.4L2 7.6zm19.8 7l7 7.2-14 14.1L.6 21.8l7-7.2-7-7 7-7.1 7.2 7 7-7 7.1 7-7.1 7.2zm-7 7.1l-6.4-6.3L2 21.8l12.7 12.7 12.7-12.7-6.3-6.4-6.3 6.3z"></path>
+      </svg>
+      <span class="navigation__logo-text" id="sitename">Roodesign <span class="visually-hidden">homepage</span></span>
+  </a>
+  <ul class="navigation__items">
+      {% for item in navigation.main %}
+          <li><a href="{{item.url }}"{% if item.id == navigation_id %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+  </ul>
+</nav>

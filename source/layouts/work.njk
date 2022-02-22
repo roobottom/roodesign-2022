@@ -1,0 +1,27 @@
+{% extends './default.njk' %}
+
+{% block content %}
+<header aria-labelledby="page-title">
+  <h1 id="page-title" class="space--margin-bottom-l">{{ title }}</h1>
+  <dl class="meta space--margin-bottom-l">
+    <div class="meta-item">
+      <dt>Date</dt>
+      <dd>{{ date | date('MMMM YYYY') }}</dd>
+    </div>
+    <div class="meta-item">
+      <dt>Project length</dt>
+      <dd>{{ project_length }}</dd>
+    </div>
+    <div class="meta-item">
+      <dt>Subjects</dt>
+      <dd>todo</dd>
+    </div>
+  </dl> 
+  <div class="prose contain-line-length space--margin-bottom-l">
+    <p class="type-lead">{{ introduction }}</p>
+  </div>
+</header>
+<div class="prose prose--flow">
+  {{ content | safe }}
+</div>
+{% endblock %}
