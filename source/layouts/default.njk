@@ -1,59 +1,8 @@
-<!doctype html>
-<html lang="en-gb" data-scroll="0">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title }} -  Roodesign</title>
-        <link rel="stylesheet" href="/css/roodesign.css">
-    </head>
-    <body class="no-js template-{{ template }}">
-        <header class="container">
-            {% include "main_navigation.njk" %}
-        </header>
-        <main class="container">
-            {% block content %}
-                {{ content | safe }}
-            {% endblock %}
-            <p>
-        </main>
-        <footer class="container footer {% if template == 'home' or template == 'services' %}footer--reverse{% endif %}">
-            <svg width="32" height="38" xmlns="http://www.w3.org/2000/svg" class="footer-badge">
-                <g fill="none" fill-rule="evenodd">
-                    <path d="M15.735 8.851L27.993 21.2 15.735 33.549 3.477 21.2 15.735 8.851z" fill="var(--badge-bg)"></path>
-                    <path d="M15.735 8.842l4.36-4.39 7.9 7.953-12.26 12.343L3.476 12.405l7.9-7.953 4.36 4.39z" fill="var(--badge-bg)"></path>
-                    <path stroke="currentColor" d="M15.735 12.4l8.736 8.8-8.736 8.8L7 21.2z"></path>
-                    <path stroke="currentColor" d="M20.095 8l4.376 4.405-8.736 8.795L7 12.405 11.375 8l4.36 4.39z"></path>
-                </g>
-            </svg>
-            <div class="footer-content">
-                <p>&copy; Roodesign Limited</p>
-                <p>Registered in England and Wales with company number 11770882</p>
-            </div>
+{% extends './_wrapper.njk' %}
 
-            <h4 class="footer-title" id="explore-this-site">Explore this site</h4>
-            <nav aria-labelledby="explore-this-site">
-                <ul class="footer-navigation">
-                    
-                </ul>
-            </nav>
-
-            <h4 class="footer-title" id="explore-this-site-by-subject">Explore this site by subject</h4>
-            <nav aria-labelledby="explore-this-site-by-subject">
-                <ul class="footer-navigation">
-                    
-                </ul>
-            </nav>
-
-            <h4 class="footer-title" id="roodesign-elsewhere">Find Roodesign elsewhere on the web</h4>
-            <nav aria-labelledby="roodesign-elsewhere">
-                <ul class="footer-navigation">
-                    
-                </ul>
-            </nav>
-
-        </footer>
-        {# <script src="{{ mix src='/js/site.js' }}"></script> #}
-        <script src="/js/prism.js"></script>
-    </body>
-</html>
+{% block content %}
+<header aria-labelledby="page-title">
+    <h1 id="page-title" class="space--margin-bottom-l">{{ title }}</h1>
+</header>
+{{ content | safe }}
+{% endblock %}
