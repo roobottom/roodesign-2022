@@ -6,6 +6,10 @@
   list-style: none;
   gap: var(--space-m);
 
+  &--overlap {
+    gap: 0;
+  }
+
   &:not(.list--grid):not(.list--grid-gallery) &-item {
     padding-bottom: var(--space-m);
     margin-bottom: var(--space-m);
@@ -27,6 +31,9 @@
   .list--grid-gallery {
     display: grid;
     .grid-columns(fit);
+  }
+  .list--overlap .list-item:not(:first-child) {
+    margin-left: -20px;
   }
   .list--grid .list-item,
   .list--grid-gallery .list-item {
