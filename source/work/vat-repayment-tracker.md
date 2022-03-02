@@ -32,7 +32,7 @@ For example, understanding why a repayment might be delayed was particularly tri
 
 Mapping the service took weeks. At our daily stand-ups, we slowly filled in the process on our “wall of knowledge”.
 
-## Getting to know our users
+### Getting to know our users
 Speaking with users, we found that for the majority, the repayments service was working well. But for around 15% of people who did have a problem, this often resulted in confusion and multiple calls. These were the users for whom we needed to improve the service.
 
 Even those having a good experience were confused about how they’d be paid. For example, users thought that setting up a Direct Debit meant that repayments would be sent back to the same account. This isn’t true, people have to provide a “repayment account”. Without one, HMRC would send a cheque.
@@ -45,24 +45,8 @@ Our user researcher, Kathy, identified some user needs:
 * tell users if HMRC had used repayments to offset other debt;
 * notify users when HMRC had sent repayment.
 
-## Routes-in
-When expecting a VAT repayment, most people simply wait for the money to arrive in their account. It’s only when this goes wrong they start looking for help. People did this in an unexpected number of ways. In fact, uncovering the routes-in was quite the challenge. It was well worth the effort, though, as it revealed alternatives to building a digital service, namely:
-
-1. Building an API to allow third-party software vendors to provide tracking information in their MTD enabled software;
-2. Improve the automated phone assistant to give tracking information;
-3. Improving various other user touch-points, such as letters and online guidance;
-4. Extending the current Business Tax Account service to show repayments.
-
-{% gallery [{
-  url: '/assets/images/work/vat-repayment-tracker/routes-in.jpg',
-  alt: 'A diagram showing various ways that users access VAT repayment information'
-}],
-'Typically there are multiple ways that users access government services; tracking a VAT repayment was no exception.',
-'text',
-'shadow' %}
-
 ### Pain points and opportunities
-I translated all our findings into an “as-is” service blueprint. This allowed us to identify pain points and opportunities by comparing the blueprint against the user needs. We were then able to rapidly spot areas for improvement.
+A service blueprint allowed us to identify pain points and opportunities by comparing the blueprint against the user needs. We were then able to rapidly spot areas for improvement.
 
 {% gallery [{
   url: '/assets/images/work/vat-repayment-tracker/service-blueprint.png',
@@ -111,3 +95,17 @@ In some ways, this solution would have made a lot of sense. We proposed that we 
 
 The integrated tracker was never going to fly as it meant we’d have to hand the work over to another team. When cost centers have more sway than user need all you can do is roll with the punches, but it’s a shame when business structure imposes itself on the UX.
 
+{% gallery [{
+  url: '/assets/images/work/vat-repayment-tracker/vat-account-itegration.png',
+  alt: 'A screenshot showing where we could have added VAT repayment information into the existing VAT account'
+}],
+'A concept where repayments are shown in place of payment due on the VAT account dashboard. Blending the tracker with the VAT account may have worked, but we didn’t get the opportunity to test it.',
+'text',
+'shadow'
+%}
+
+#### The third-party tracker
+Thanks to the Making Tax Digital programme, VAT payers were now submitting tax returns from MTD compatible software. We thought it probable that people would want to see any repayments progress in the same place, too. We thought providing an API would be an ideal addition to any service hosted on GOV.UK. The business agreed but proposed funding the API work as part of a possible second phase.
+
+#### The “deluxe” tracker
+The deluxe tracker was created to show complete information about repayments. By providing a full history of statuses with an explanation of what they meant, we could hit every one of the user needs. Thankfully, the business agreed and green-lit further work on this solution.

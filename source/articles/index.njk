@@ -1,0 +1,22 @@
+---
+title: Articles
+layout: default
+eleventyExcludeFromCollections: true
+---
+<ul class="list contain-indent">
+  {% for article in collections.articles %}
+    <li class="list-item">
+      <article class="summary ">
+        <header class="summary-header">
+          <h2 class="summary-title"><a href="{{ article.url }}" class="summary-link">{{ article.data.title }}</a></h2>
+        </header>
+        <div class="summary-content prose">
+          <p>{{ article.data.introduction }}</p>
+        </div>
+        <footer class="summary-footer">
+          <time datetime="" class="summary-date">{{ article.date | date }}</time>
+        </footer>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
