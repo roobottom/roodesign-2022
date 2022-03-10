@@ -1,10 +1,11 @@
 ---
 title: Work
 layout: default
+section_id: work
 eleventyExcludeFromCollections: true
 ---
 <ul class="list list--grid">
-  {% for item in collections.work | reverse %}
+  {% for item in collections.work %}
     <li class="list-item">
       {% card item.data.title, item.data.introduction, item.url, item.data.cover %}
     </li>

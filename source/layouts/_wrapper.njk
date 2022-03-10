@@ -1,3 +1,4 @@
+{% set cdn = 'https://unpkg.com/' %}
 <!doctype html>
 <html lang="en-gb" data-scroll="0">
     <head>
@@ -6,8 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title }} -  Roodesign</title>
         <link rel="stylesheet" href="/css/roodesign.css">
+        <link href="{{cdn}}prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     </head>
-    <body class="no-js template-{{ template }}">
+    <body class="no-js template-{{ section_id }}">
         <header class="container">
             {% include "main_navigation.njk" %}
         </header>
@@ -16,7 +18,7 @@
             {% endblock %}
             <p>
         </main>
-        <footer class="container footer {% if template == 'home' or template == 'services' %}footer--reverse{% endif %}">
+        <footer class="container footer {% if section_id == 'home' %}footer--reverse{% endif %}">
             <svg width="32" height="38" xmlns="http://www.w3.org/2000/svg" class="footer-badge">
                 <g fill="none" fill-rule="evenodd">
                     <path d="M15.735 8.851L27.993 21.2 15.735 33.549 3.477 21.2 15.735 8.851z" fill="var(--badge-bg)"></path>
@@ -40,7 +42,9 @@
             <h4 class="footer-title" id="explore-this-site-by-subject">Explore this site by subject</h4>
             <nav aria-labelledby="explore-this-site-by-subject">
                 <ul class="footer-navigation">
-                    
+                    {% for tag in collections.tags %}
+                        <li><a href="/subjects/{{ tag.title | slugify }}">{{ tag.title | title }}</a> ({{ tag.count }})</li>
+                    {% endfor %}
                 </ul>
             </nav>
 
@@ -52,6 +56,7 @@
             </nav>
 
         </footer>
-        <script src="/js/prism.js"></script>
+        <script src="{{cdn}}prismjs@v1.x/components/prism-core.min.js"></script>
+	    <script src="{{cdn}}prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
     </body>
 </html>

@@ -14,7 +14,7 @@
     </div>
     <div class="meta-item">
       <dt>Subjects</dt>
-      <dd>todo</dd>
+      <dd>{% for tag in tags %}<a href="/subjects/{{ tag | slugify }}">{{ tag | title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>
     </div>
   </dl> 
   <div class="prose contain-line-length space--margin-bottom-l">

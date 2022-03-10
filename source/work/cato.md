@@ -3,9 +3,9 @@ title: Accessible corporation tax
 introduction: 'I partially redesigned the corporation tax service so more people could use it.'
 date: 2020-11-01
 tags:
-  - gov-uk
+  - government services
   - accessibility
-  - web-development
+  - web development
 homepage: true
 project_length: '6 months'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Design for humans
 layout: "home.njk"
-template: "home"
+section_id: "home"
 introduction: 'Roodesign is a creative agency run by me, Jon Roobottom. Using human-centred design techniques, I help organisations build great products, manage happy teams and have potent ideas.'
 ---
 Good ideas transform businesses. Yet, many regard creativity as the preserve of artists and designers. I believe that anyone can have exceptional ideas — regardless of who they are or what they do.

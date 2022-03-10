@@ -7,7 +7,7 @@
   </a>
   <ul class="navigation__items">
       {% for item in navigation.main %}
-          <li><a href="{{item.url }}"{% if item.id == navigation_id %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
+          <li><a href="{{ item.url }}"{% if item.id == section_id %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
       {% endfor %}
   </ul>
 </nav>

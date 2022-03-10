@@ -1,5 +1,4 @@
 module.exports = {
-  layout: 'work_item.njk',
-  navigation_id: 'work',
-  tags: ['work']
+  layout: 'article.njk',
+  section_id: 'work'
 }
