@@ -72,8 +72,8 @@ All the components compose together, so the pattern library can also be used for
   frame: 'tablet'
 }], 
 'I created a pattern library that designers could use for rapid prototyping and developers for production code.', 
-'', 
-'full' 
+'full', 
+'' 
 %}
 
 ## Outcomes
