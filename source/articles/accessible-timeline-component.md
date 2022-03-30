@@ -53,7 +53,7 @@ This component works well on services with a fixed number of events, but it’s 
   }
 ],
 'My version of the “Track progress or status of an application” component.',
-null,
+'text',
 'shadow' %}
 
 ### Progress bar
@@ -72,7 +72,7 @@ Thankfully, it turned out that we could show each status. So I didn’t spend to
   }
 ],
 'When we thought we couldn’t show statues to users, we had to give them a rough idea of progress. A progress bar seemed ideal for this.',
-null,
+'text',
 'shadow' %}
 
 ### Timeline
@@ -87,7 +87,7 @@ We tested the timeline as part of the testing on the VRT in multiple rounds. It 
   }
 ],
 'The vertical timeline component in VRT based on the DWP component.',
-null,
+'text',
 'shadow' %}
 
 ## Code

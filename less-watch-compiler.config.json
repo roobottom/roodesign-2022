@@ -1,0 +1,7 @@
+{
+    "watchFolder": "./source/assets/less",   
+    "outputFolder": "./_site/css",
+    "mainFile": "roodesign.less",   
+    "sourceMap": true,
+    "includeHidden": true
+}

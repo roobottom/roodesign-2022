@@ -31,6 +31,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("date", require('./lib/filters/date.js'))
   eleventyConfig.addFilter("slugify", require('./lib/filters/slugify.js'))
   eleventyConfig.addFilter("plural", require('./lib/filters/plural.js'))
+  eleventyConfig.addFilter("smartypants", require('./lib/filters/smartypants.js'))
 
   //shortcodes (AKA components)
   eleventyConfig.addShortcode("gallery", require('./lib/shortcodes/gallery.js'))

@@ -1,4 +1,4 @@
 module.exports = {
-  layout: 'article.njk',
+  layout: 'work-item.njk',
   section_id: 'work'
 }
