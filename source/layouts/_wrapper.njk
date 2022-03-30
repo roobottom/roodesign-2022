@@ -18,7 +18,7 @@
             {% endblock %}
             <p>
         </main>
-        <footer class="container footer {% if section_id == 'home' %}footer--reverse{% endif %}">
+        <footer class="container footer">
             <svg width="32" height="38" xmlns="http://www.w3.org/2000/svg" class="footer-badge">
                 <g fill="none" fill-rule="evenodd">
                     <path d="M15.735 8.851L27.993 21.2 15.735 33.549 3.477 21.2 15.735 8.851z" fill="var(--badge-bg)"></path>
@@ -43,7 +43,7 @@
             <nav aria-labelledby="explore-this-site-by-subject">
                 <ul class="footer-navigation">
                     {% for tag in collections.tags %}
-                        <li><a href="/subjects/{{ tag.title | slugify }}">{{ tag.title | title }}</a> ({{ tag.count }})</li>
+                        <li><a href="/subjects/{{ tag.title | slugify }}">{{ tag.title | title }}</a></li>
                     {% endfor %}
                 </ul>
             </nav>

@@ -1,10 +1,6 @@
 module.exports = {
   main: [
     {
-      url: '/services/',
-      title: 'Services',
-      id: 'services'
-    }, {
       url: '/work/',
       title: 'Work',
       id: 'work'
