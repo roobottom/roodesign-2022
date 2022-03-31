@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
-    "watch:less": "npx less-watch-compiler",
+    "watch:less": "npx gulp default",
     "start": "npm run watch:eleventy & npm run watch:less",
     "build:eleventy": "npx @11ty/eleventy",
-    "build:less": "npx lessc -x ./source/assets/less/roodesign.less ./_site/css/roodesign.css",
-    "build": "npx @11ty/eleventy & "
+    "build:less": "npx gulp build",
+    "build": "npm run build:eleventy && npm run build:less"
   },
   "author": "Jon Roobottom",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-less": "^5.0.0",
     "less": "^4.1.2",
     "less-watch-compiler": "^1.16.3",
     "lodash": "^4.17.21",
