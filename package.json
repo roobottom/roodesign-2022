@@ -7,7 +7,9 @@
     "watch:eleventy": "npx @11ty/eleventy --serve --quiet",
     "watch:less": "npx less-watch-compiler",
     "start": "npm run watch:eleventy & npm run watch:less",
-    "build": "npx @11ty/eleventy & npx lessc ./source/assets/less/roodesign.less ./_site/css/roodesign.css"
+    "build:eleventy": "npx @11ty/eleventy",
+    "build:less": "npx lessc -x ./source/assets/less/roodesign.less ./_site/css/roodesign.css",
+    "build": "npx @11ty/eleventy & "
   },
   "author": "Jon Roobottom",
   "license": "ISC",
