@@ -4,6 +4,7 @@ introduction: I helped Onalytica’s design and product teams improve processes 
 date: 2018-11-01
 project_length: '8 months'
 homepage: true
+cover: /assets/images/work/onalytica/hero.jpg
 ---
 ## Discovery
 Onalytica’s goals were threefold:

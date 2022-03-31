@@ -3,6 +3,7 @@ title: Leading design at Firefly Learning
 introduction: I led the design team at Firefly Learning; we helped thousands of teachers, students and parents to teach and learn from anywhere.
 date: 2014-09-01
 project_length: '4 years'
+cover: /assets/images/work/firefly/hero.jpg
 ---
 ## Defining design
 The goal of the design team was to provide the absolute best experience for teachers, students and parents. We were responsible for what users saw on screen and how they interacted with our product. My challenge was to grow a team that delivered on the goal.

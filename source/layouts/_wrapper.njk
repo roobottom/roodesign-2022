@@ -35,7 +35,9 @@
             <h4 class="footer-title" id="explore-this-site">Explore this site</h4>
             <nav aria-labelledby="explore-this-site">
                 <ul class="footer-navigation">
-                    
+                  {% for item in navigation.footer %}
+                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endfor %}  
                 </ul>
             </nav>
 
@@ -45,13 +47,6 @@
                     {% for tag in collections.tags %}
                         <li><a href="/subjects/{{ tag.title | slugify }}">{{ tag.title | title }}</a></li>
                     {% endfor %}
-                </ul>
-            </nav>
-
-            <h4 class="footer-title" id="roodesign-elsewhere">Find Roodesign elsewhere on the web</h4>
-            <nav aria-labelledby="roodesign-elsewhere">
-                <ul class="footer-navigation">
-                    
                 </ul>
             </nav>
 

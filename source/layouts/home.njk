@@ -3,7 +3,7 @@
 {% block content %}
 <div class="showcase">
   <h1 class="type-mega showcase-title">{{ title }}</h1>
-  <img src="/assets/images/illustrations/fizzing-brain-2021.png" class="showcase-image" aria-hidden="true" role="presentation" alt="A person who’s brain is fizzing with ideas!"/>
+  <img src="/assets/images/hero.png" class="showcase-image" aria-hidden="true" role="presentation" alt="A illustration of lots of people"/>
   <div class="showcase-content prose contain-line-length space--margin-top-s">
     {{ content | safe }}
   </div>
@@ -13,8 +13,12 @@
 
 <h2 class="space--margin-top-xxl">Featured work</h2>
 <ul class="list list--grid space--margin-top-m">
-  {# {{ collection:work homepage:is="true" }}
-    <li class="list-item">{{ partial:card h="h3" fathom_event="QLKMK8VM" }}</li>
-  {{ /collection:work}} #}
+  {% for item in collections.work %}
+    {% if item.data.homepage %}
+      <li class="list-item">
+        {% card item.data.title, item.data.introduction, item.url, item.data.cover %}
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>
 {% endblock %}

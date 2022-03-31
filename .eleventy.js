@@ -3,9 +3,9 @@ const markdownItAttrs = require("markdown-it-attrs")
 const markdownItAnchor = require("markdown-it-anchor")
 
 module.exports = function(eleventyConfig) {
-  // eleventyConfig.setBrowserSyncConfig({
-  //     files: './_site/css/**/*.css'
-  // })
+  eleventyConfig.setBrowserSyncConfig({
+      files: './_site/css/**/*.css'
+  })
 
   let mdOptions = {
     typographer: true,

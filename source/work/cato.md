@@ -8,6 +8,7 @@ tags:
   - web development
 homepage: true
 project_length: '6 months'
+cover: /assets/images/work/cato/hero.jpg
 ---
 ## Discovery
 

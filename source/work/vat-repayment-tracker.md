@@ -3,6 +3,8 @@ title: Helping taxpayers when they’re due a refund
 date: 2019-04-01
 project_length: 1 year
 introduction: I helped HMRC to better serve the taxpayer by designing a service to track VAT repayments online.
+homepage: true
+cover: /assets/images/work/vat-repayment-tracker/hero.jpg
 ---
 ## The problem
 When a VAT repayment is delayed, it can spell disaster for business as predicting cash flow is vital. Understandably, people want to know when they’ll get paid.

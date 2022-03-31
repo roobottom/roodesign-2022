@@ -1,18 +1,15 @@
 .showcase {
   &-image {
-    float: right;
     display: block;
-    max-width: 120px;
-    margin-top: var(--space-s);
-    margin-right: var(--space-s);
+    max-width: 100%;
   }
 }
 
-@media only screen and (min-width: 609px) {
+@media @bp[max] {
   .showcase {
 
     display: grid;
-    grid-template-columns: auto minmax(180px, 420px);
+    grid-template-columns: auto minmax(400px, 600px);
     grid-template-rows: auto;
     grid-template-areas: 
       "title image"
@@ -24,9 +21,9 @@
     }
 
     &-image {
-      float: none;
-      max-width: 100%;
+      
       grid-area: image;
+      align-self: end;
     }
 
     &-content {

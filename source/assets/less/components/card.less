@@ -14,8 +14,8 @@
     margin-bottom: 0;
     background-size: cover;
     background-position: top center;
-    background-color: var(--c-pink);
-    background-blend-mode: soft-light;
+    background-color: black;
+    //background-blend-mode: soft-light;
     background-image: var(--cover);
     min-height: 40vh;
 
@@ -41,13 +41,13 @@
   }
 
   &-title {
-    margin: calc(2 * var(--step-0));
-    margin-bottom: var(--step-0);
+    padding: var(--step-0) calc(2 * var(--step-0));
     #type.family.sans;
     font-size: var(--step-2);
     font-weight: bold;
     color: white;
     text-shadow: 0 1px 0 fade(black,90%);
+    background-color: fade(black, 20%);
   }
 
   &:hover {
