@@ -34,7 +34,7 @@
 
 #type {
     .style() {
-        .link(@color: var(--c-blue), @focus: var(--c-blue), @underline: underline) {
+        .link(@color: var(--c-link), @focus: var(--c-link), @underline: underline) {
             color: @color;
             text-decoration: @underline;
             padding: var(--space-xxs);
@@ -46,6 +46,7 @@
             &:focus {
                 outline: 2px solid @focus;
                 text-decoration: none;
+                color: @focus;
             }
         }
     }
@@ -187,7 +188,8 @@ hr {
     }
 
     >*+h2,
-    .quote {
+    .quote,
+    >.quote+* {
         margin-top: var(--space-xxl);
     }
 

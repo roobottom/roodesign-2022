@@ -24,10 +24,6 @@ module.exports = {
       title: 'Articles',
       id: 'articles'
     }, {
-      url: '/about/',
-      title: 'About Jon',
-      id: 'about'
-    }, {
       url: '/contact/',
       title: 'Contact',
       id: 'contact'

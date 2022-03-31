@@ -34,7 +34,7 @@
   }
   &-error-message {
     font-size: var(--step-0);
-    color: var(--c-purple);
+    color: var(--c-error);
   }
   &-input {
     #type.family.sans;
@@ -45,11 +45,11 @@
     width: 100%;
     margin-top: var(--space-xs);
     &--error {
-      border-color: var(--c-purple);
+      border-color: var(--c-error);
     }
     &:focus,
     &:active {
-      box-shadow: 0 0 0 3px var(--c-pink), inset 0 0 0 3px white;
+      box-shadow: 0 0 0 1px white, 0 0 0 4px var(--c-blue), inset 0 0 0 3px white;
     }
   }
 
@@ -57,20 +57,20 @@
     #type.family.sans;
     line-height: 1;
     font-size: var(--step-0);
-    background-color: var(--c-purple);
+    background-color: var(--c-blue);
     color: white;
     padding: var(--space-xs) var(--space-s);
     border: none;
     cursor: pointer;
-    box-shadow: 0 3px 0 var(--c-purple-dark);
+    box-shadow: 0 3px 0 var(--c-blue-dark);
 
     &:hover {
-      background-color: var(--c-purple-dark);
+      background-color: var(--c-blue-dark);
     }
 
     &:focus,
     &:active {
-      box-shadow: 0 0 0 3px var(--c-purple-dark), inset 0 0 0 3px white;
+      box-shadow: 0 0 0 3px var(--c-blue), inset 0 0 0 3px white;
     }
 
   }
