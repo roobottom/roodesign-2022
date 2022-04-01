@@ -88,9 +88,9 @@ form.addEventListener('submit', function (e) {
   if (!isEmailValid(email)) {
     summary.push({
       href: '#email',
-      text: 'You must provide a valid email address'
+      text: 'You must enter a valid email address'
     })
-    showError('email','You must provide a valid email address')
+    showError('email','You must enter a valid email address')
   }
 
   //validate content
