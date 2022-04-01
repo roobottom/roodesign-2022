@@ -1,4 +1,3 @@
-{% set cdn = 'https://unpkg.com/' %}
 <!doctype html>
 <html lang="en-gb" data-scroll="0">
     <head>
@@ -6,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title }} -  Roodesign</title>
-        <link rel="stylesheet" href="/css/roodesign.css">
-        <link href="{{cdn}}prismjs@v1.x/themes/prism.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/assets/css/roodesign.css">
+        <link href="{{ global.cdn }}prismjs@v1.x/themes/prism.css" rel="stylesheet" />
     </head>
     <body class="no-js template-{{ section_id }}">
         <header class="container">
@@ -51,7 +50,10 @@
             </nav>
 
         </footer>
-        <script src="{{cdn}}prismjs@v1.x/components/prism-core.min.js"></script>
-	    <script src="{{cdn}}prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+        <script src="{{ global.cdn }}prismjs@v1.x/components/prism-core.min.js"></script>
+	    <script src="{{ global.cdn }}prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+        {% if section_id == 'contact' %}
+        <script src="/assets/js/contact-form.js"></script>
+        {% endif %}
     </body>
 </html>

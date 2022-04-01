@@ -5,14 +5,19 @@ const babel = require('gulp-babel')
 const css = () => {
   return src('./source/assets/less/roodesign.less')
     .pipe(less())
-    .pipe(dest('./_site/css'))
+    .pipe(dest('./_site/assets/css'))
 }
 
 
 const js = (callback) => {
-  return src('./source/assets/js/app.js')
-  .pipe(babel())
-  .pipe(dest('./_site/js'))
+  return src([
+    './source/assets/js/app.js',
+    './source/assets/js/contact-form.js'
+  ])
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))
+  .pipe(dest('./_site/assets/js'))
 }
 
 exports.default = function(callback) {

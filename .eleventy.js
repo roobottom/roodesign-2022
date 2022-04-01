@@ -25,7 +25,6 @@ module.exports = function(eleventyConfig) {
   // copy static files
   eleventyConfig.addPassthroughCopy("./source/assets/fonts/**/*")
   eleventyConfig.addPassthroughCopy("./source/assets/images/**/*")
-  eleventyConfig.addPassthroughCopy("./source/assets/js/**/*")
 
   //filters
   eleventyConfig.addFilter("date", require('./lib/filters/date.js'))

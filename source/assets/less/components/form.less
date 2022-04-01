@@ -1,9 +1,11 @@
+.error-summary {
+  background-color: var(--c-error);
+  background: linear-gradient(-120deg,var(--c-error),var(--c-error-dark));
+  padding: var(--space-s);
+  margin-bottom: var(--space-m);
+}
+
 .form {
-  &-errors {
-    background-color: var(--c-pink);
-    background: linear-gradient(-120deg,var(--c-pink),var(--c-purple));
-    padding: var(--space-s);
-  }
   &-group {
     margin-bottom: var(--space-m);
     &--error {
@@ -16,7 +18,7 @@
         left: calc(-1 * var(--space-s));
         width: 6px;
         background-color: var(--c-pink);
-        background: linear-gradient(0deg,var(--c-purple),var(--c-pink));
+        background: linear-gradient(0deg,var(--c-error),var(--c-error-dark));
       }
     }
   }
@@ -50,6 +52,10 @@
     &:focus,
     &:active {
       box-shadow: 0 0 0 1px white, 0 0 0 4px var(--c-blue), inset 0 0 0 3px white;
+    }
+    &--error:focus,
+    &--error:active {
+      box-shadow: 0 0 0 1px white, 0 0 0 4px var(--c-error), inset 0 0 0 3px white;
     }
   }
 
