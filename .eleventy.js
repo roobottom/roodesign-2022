@@ -15,6 +15,8 @@ module.exports = function(eleventyConfig) {
   let md =  markdownIt(mdOptions)
             .use(markdownItAttrs)
             .use(markdownItAnchor)
+            .use(require('markdown-it-abbr'))
+            .use(require('markdown-it-footnote'))
 
   //11ty md eleventyConfig
   eleventyConfig.setLibrary("md", md)

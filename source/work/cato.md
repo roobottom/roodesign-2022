@@ -7,11 +7,13 @@ tags:
   - accessibility
   - web development
 homepage: true
-project_length: '6 months'
+meta:
+- key: Project length
+  value: Six months
+- key: GDS project phases
+  value: Live
 cover: /assets/images/work/cato/hero.jpg
 ---
-## Discovery
-
 The [File your accounts and Company Tax Return](https://www.gov.uk/file-your-company-accounts-and-tax-return) service—aka CATO—has been around for a while. But, unfortunately, not everyone could use it. We worked with the [Digital Accessibility Centre](http://digitalaccessibilitycentre.org/) who wrote an end-to-end review of our service; it failed miserably.
 
 Of course, we had to fix the technical accessibility issues found by DAC, but if we could also improve some other things along the way, why not!

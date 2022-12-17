@@ -1,8 +1,15 @@
 ---
 title: Helping taxpayers when they’re due a refund
 date: 2019-04-01
-project_length: 1 year
 introduction: I helped HMRC to better serve the taxpayer by designing a service to track VAT repayments online.
+tags:
+- service design
+- interaction design
+meta:
+- key: Project length
+  value: Nine months
+- key: GDS phases
+  value: Discovery, alpha, beta
 homepage: true
 cover: /assets/images/work/vat-repayment-tracker/hero.jpg
 ---
@@ -19,14 +26,14 @@ In the [discovery phase](https://www.gov.uk/service-manual/agile-delivery/how-th
 * chatted with HMRC staff to understand the end-to-end repayments process;
 * ran workshops to identify the problems and places for improvement.
 
-When a company submits a VAT return, it triggers a complex set of interactions between the user, employees and software. To understand this journey, we set about creating a service map.
-
 {% gallery [{
   url: '/assets/images/work/vat-repayment-tracker/wall-of-knowledge.jpg',
   alt: 'I stick post-it notes on a wall while two colleges look on'
 }],
 'Discussing the puzzle of VAT repayments on our “wall of knowledge”',
 'right' %}
+
+When a company submits a VAT return, it triggers a complex set of interactions between the user, employees and software. To understand this journey, we set about creating a service map.
 
 This was a significant challenge; VAT is complex, involving many people and processes. There isn’t just one VAT team, so we spent a lot of our time trying to find out who could answer our questions.
 
@@ -111,3 +118,12 @@ Thanks to the Making Tax Digital programme, VAT payers were now submitting tax r
 
 #### The “deluxe” tracker
 The deluxe tracker was created to show complete information about repayments. By providing a full history of statuses with an explanation of what they meant, we could hit every one of the user needs. Thankfully, the business agreed and green-lit further work on this solution.
+
+#### When will I get my repayment?
+One thing that kept coming up in testing was the question "when will I get my repayment?" We felt that without showing dates, we wouldn't put a dent in the volume of calls to the helpline. 
+
+The problem was that we couldn't just pull a date out of an API as no such data existed. We did, however, know when the user had submitted their return and how long [HMRC allowed for repayments](https://www.gov.uk/vat-repayments#how-long-it-takes); at 30 days HMRC would have to pay a "repayment supplement" if the delay was their fault. So we tested a version with an approximate date. This worked great! 
+
+If repayments were delayed beyond 30 days, we added a new timeline item to the history acknowledging this and providing guidance on what the user could try next. 
+
+This also prompted us to redesign the tracker history page. Making the amount and estimate date front-and-centre worked well during testing. 

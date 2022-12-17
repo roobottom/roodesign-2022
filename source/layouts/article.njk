@@ -8,10 +8,12 @@
       <dt>Date</dt>
       <dd>{{ date | date('DD MMMM YYYY') }}</dd>
     </div>
+    {% if tags %}
     <div class="meta-item">
       <dt>Subjects</dt>
       <dd>{% for tag in tags %}<a href="/subjects/{{ tag | slugify }}">{{ tag | title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>
     </div>
+    {% endif %}
   </dl> 
   <div class="prose prose--flow space--margin-bottom-l">
     <p class="type-lead">{{ introduction | smartypants | safe }}</p>

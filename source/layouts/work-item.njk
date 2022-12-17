@@ -5,13 +5,15 @@
   <h1 id="page-title" class="space--margin-bottom-l">{{ title }}</h1>
   <dl class="meta space--margin-bottom-l">
     <div class="meta-item">
-      <dt>Date</dt>
+      <dt>Completed</dt>
       <dd>{{ date | date('MMMM YYYY') }}</dd>
     </div>
+    {% for item in meta %}
     <div class="meta-item">
-      <dt>Project length</dt>
-      <dd>{{ project_length }}</dd>
+      <dt>{{ item.title or item.key }}</dt>
+      <dd>{{ item.value }}</dd>
     </div>
+    {% endfor %}
     <div class="meta-item">
       <dt>Subjects</dt>
       <dd>{% for tag in tags %}<a href="/subjects/{{ tag | slugify }}">{{ tag | title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>

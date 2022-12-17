@@ -2,7 +2,13 @@
 title: Improving design process at Onalytica
 introduction: I helped Onalytica’s design and product teams improve processes and kick-start a standardised approach to interface design.
 date: 2018-11-01
-project_length: '8 months'
+tags:
+- leading design
+- interaction design
+- design systems
+meta:
+- key: Project length
+  value: Eight months
 homepage: true
 cover: /assets/images/work/onalytica/hero.jpg
 ---

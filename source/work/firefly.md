@@ -1,8 +1,13 @@
 ---
 title: Leading design at Firefly Learning
 introduction: I led the design team at Firefly Learning; we helped thousands of teachers, students and parents to teach and learn from anywhere.
-date: 2014-09-01
-project_length: '4 years'
+date: 2018-10-01
+tags:
+- leading design
+- design community
+meta:
+- key: Project length
+  value: Four years
 cover: /assets/images/work/firefly/hero.jpg
 ---
 ## Defining design
