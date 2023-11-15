@@ -19,6 +19,12 @@ Our mission was to make it easier and quicker for data providers to submit valid
 
 
 ## Rapid, agile design
+When I joined the team, they had recently undergone an alpha assessment and had not met the service standard requirements. We needed to test and implement the best solution to this problem. Using the GOV.UK prototyping kit, I created a prototype and gathered user feedback to refine the design.
+
+To further improve the submission process for housing logs, I implemented form design principles such as presenting one task per page and creating a clear starting point. I also developed the team's ability to communicate the service process through detailed user journey maps.
+
+I introduced a design history to document our decision-making process to ensure transparency and accountability. Just five weeks later, we were able to meet all the requirements for our alpha reassessment.
+
 I joined the team shortly after their [alpha assessment](https://www.gov.uk/service-standard-reports/submit-data-on-social-housing-sales-and-lettings-alpha-assessment-report); unfortunately, they hadn't met the requirements of the service standard. The team experimented with many hypotheses but none in-depth, so we needed to test their best solution idea quickly.
 
 {% gallery [{
