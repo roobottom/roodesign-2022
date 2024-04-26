@@ -2,6 +2,7 @@
 
 {% block content %}
 <header aria-labelledby="page-title">
+  {% if caption %}<span class="caption">{{ caption }}</span>{% endif %}
   <h1 id="page-title" class="space--margin-bottom-l">{{ title }}</h1>
   <dl class="meta space--margin-bottom-l">
     <div class="meta-item">

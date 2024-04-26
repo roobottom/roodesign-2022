@@ -1,3 +1,4 @@
+{% from "../includes/opengraph.njk" import opengraph as opengraph %}
 <!doctype html>
 <html lang="en-gb" data-scroll="0">
     <head>
@@ -7,6 +8,19 @@
         <title>{{ title }} -  Roodesign</title>
         <link rel="stylesheet" href="/assets/css/roodesign.css">
         <link href="{{ global.cdn }}prismjs@v1.x/themes/prism.css" rel="stylesheet" />
+        
+        {{ opengraph({
+          type: og.type,
+          'og:url': og.url,
+          'og:site_name': 'Roodesign',
+          'og:locale': 'en_GB',
+          'og:title': title,
+          'og:description': og.description or introduction or 'Roodesign: Design for humans',
+          'og:image': og.image.url,
+          'og:image:width': '1280',
+          'og:image:height': '680',
+          'og:image:alt': og.image.alt
+        }) }}
     </head>
     <body class="no-js template-{{ section_id }}">
         <header class="container">
