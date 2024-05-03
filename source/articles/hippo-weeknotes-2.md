@@ -1,8 +1,11 @@
 ---
 title: Universal Credit
 caption: Hippo weeknotes, volume two
-date: 2024-05-05
+date: 2024-05-03
 introduction: "My second week at Hippo was an interesting mix of onboarding, internal projects and learning about Universal Credit."
+tags:
+- weeknotes
+- hippo digital
 ---
 
 Next week, I'll join the team at the Department for Work and Pensions (DWP) to work on an internal Universal Credit (UC) service. Here's everything I think I know about the project:
