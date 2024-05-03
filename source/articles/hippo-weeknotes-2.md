@@ -22,7 +22,7 @@ Even though it might be a [load of old rubbish](https://skepchick.org/2020/10/th
 
 I wonder how much of my understanding of the problems with UC will turn out to be wrong.
 
-## Meanwhile, back at Hippo
+## Meanwhile, back at Hippo {.h3}
 I've been working with Rich and Zoe on planning a session for our user experience and service designers in Leeds in a couple of weeks. I won't give anything away, but it should be fun. 
 
 On Tuesday, I received an unexpected gift: A box full of Hippo-branded goodies. It's a small gesture but it made a big impact in making me feel welcomed. My daughter snaffled the chocolate within 60 seconds of me opening the box. 
