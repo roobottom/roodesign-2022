@@ -1,8 +1,9 @@
 ---
-title: Choosing the right prototyping tool
+title: Choosing a prototyping tool
 caption: Hippo weeknotes, volume three
 date: 2024-05-10
 introduction: "New tech, unhelpful opinions and thoughts about prototype fidelity."
+cover: /assets/images/articles/hippo-weeknotes-3/prototype-tools.png
 tags:
 - weeknotes
 - hippo digital
