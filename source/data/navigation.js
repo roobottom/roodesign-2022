@@ -10,7 +10,7 @@ module.exports = {
       id: 'articles'
     }, {
       url: '/contact/',
-      title: 'Contact',
+      title: 'Contact me',
       id: 'contact'
     }
   ],

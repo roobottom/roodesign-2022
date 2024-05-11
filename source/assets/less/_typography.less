@@ -289,9 +289,19 @@ abbr[title] {
         >ol,
         >table,
         >h2,>h3,>h4,>h5,>h6,
-        blockquote:not(.quote) {
+        blockquote:not(.quote),
+        .callout {
             #container.flow;
         }
+    }
+
+    .callout {
+        background-color: var(--c-yellow-light);
+        border: 1px solid var(--c-yellow);
+        border-left-width: 6px;
+        padding: var(--space-xs);
+        transform: translateX(calc(-1 * (var(--space-xs) + 6px)));
+        margin-top: var(--space-xl);
     }
 
     &--reverse {
